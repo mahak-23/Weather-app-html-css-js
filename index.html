@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h2><i class="fa fa-map-marker"></i> &nbsp;<span id="location"></span> </h2>
+            <h6 id="weather"></h6>
+            <h4><span id="temp"></span><sup>o</sup>C</h4>
+
+            <h6>Min-Temp :&nbsp;<span id="mintemp"></span><sup>o</sup>C &nbsp;&nbsp;||&nbsp; &nbsp;Max-Temp :&nbsp;<span id="maxtemp"></span><sup>o</sup>C</h6>
+
+            <img src="" id="icon" alt="">
+            <button onclick="refreshWeather()"  class="refresh"><i class="fa fa-refresh"></i></button>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

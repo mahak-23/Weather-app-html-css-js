@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    color: #fff;
+    background-image: url(nature-colorful-landscape-dusk-cloud.jpg);
+    background-size: cover;
+}
+.container{
+    width: 28%;
+}
+.card{
+   border-radius: 50px;
+   background: #135cdb;
+   box-shadow: 5px 5px 10px #033266, -5px -5px 10px #bbc9e1;
+   padding: 3%;
+   text-align: center;
+}
+.card h4{
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+#mintemp {
+    font-weight: 400;
+}
+#maxtemp{
+    font-weight: 400;
+}
+img #icon{
+    width: 50%;
+}
+h6 #weather{
+    text-transform: capitalize;
+}
+.refresh{
+    background:transparent;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    border: 0;
+    color: #c4d5de;
+    font-size: 30px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px#114179, 5px 5px 15px #546177;
+
+}
+.refresh:hover{
+    box-shadow: inset 10px 5px 10px #114179, inset 5px 5px 15px #546177;
+}
+
+
+
+
+/* small tablets to big tablets from 768 to 1023px */
+@media only screen and (max-width:1023px){
+   
+    .container{
+        width: 30%;
+    }
+  
+}
+
+/* small phones to small tablets from 481 to 767px */
+@media only screen and (max-width:767px){
+    .container{
+        width: 40%;
+    }
+    .card{
+        border-radius: 30px;
+        padding: 2%;
+     }
+     .card h4{
+         font-size: 2.5rem;
+         font-weight: 400;
+         margin: 0.5rem 0;
+     }
+     #mintemp {
+        margin-top: 0.2rem 0;
+        font-weight: 400;
+    }
+    #maxtemp{
+        margin-top: 0.1rem 0;
+        font-weight: 400;
+    }
+    img #icon{
+        margin-top: 0.2rem 0;
+        width: 40%;
+    }
+    h6 #weather{
+        font-size: 2.5rem;
+    }
+    .refresh{
+        width: 80px;
+        margin: 8px auto;
+        font-size: 30px;
+        height: 80px;
+    }
+    
+}
+
+/* small phones from 0 to 480px */
+@media only screen and (max-width:480px){
+  
+    .container{
+        width: 60%;
+    }
+    .card{
+        border-radius: 25px;
+        padding: 1%;
+     }
+     .card h4{
+         font-size: 2.2rem;
+         font-weight: 400;
+         margin: 0.5rem 0;
+     }
+     #mintemp {
+        margin-top: 0.15rem 0;
+        font-weight: 400;
+    }
+    #maxtemp{
+        margin-top: 0.5rem 0;
+        font-weight: 400;
+    }
+    img #icon{
+        margin-top: 0.15rem 0;
+        width: 40%;
+    }
+    h6 #weather{
+        font-size: 2.2rem;
+    }
+    .refresh{
+        width: 70px;
+        margin: 8px auto;
+        font-size: 30px;
+        height: 70px;
+    }
+}
+    
